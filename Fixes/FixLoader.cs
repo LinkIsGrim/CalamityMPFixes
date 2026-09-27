@@ -28,6 +28,7 @@ namespace CalamityMPFixes.Fixes
             TryApply("Buzzkill saw gores on the server", ServerGoreFixes.ApplyBuzzkillFix);
             TryApply("Wulfrum set end gores on the server", ServerGoreFixes.ApplyWulfrumSetFix);
             TryApply("Wulfrum Lure waves in multiplayer", WulfrumLureFix.Apply);
+            TryApply("Voidragon laser (AbyssalFire) can't find its gun in multiplayer", AbyssalFireFix.Apply);
         }
 
         private void TryApply(string name, Action apply)

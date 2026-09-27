@@ -13,6 +13,7 @@ Not affiliated with the Calamity Mod team. The fixes have also been submitted up
 | Buzzkill saw gores throw on the server | Skip `BuzzkillSaw.OnKill` on the server | [#124](https://github.com/CalamityTeam/CalamityModPublic/pull/124) |
 | Wulfrum set end gores throw on the server | Skip `WulfrumArmorPlayer.SetBonusEndEffect` on the server | [#124](https://github.com/CalamityTeam/CalamityModPublic/pull/124) |
 | Wulfrum Lure waves spawn nothing on the server, and local-only robots on clients | Replace `WulfrumLureSignal.AI`, with a packet for the arrival sparks | [#125](https://github.com/CalamityTeam/CalamityModPublic/pull/125) |
+| Voidragon's laser (`AbyssalFire`) looks up its gun by the owner's local projectile index, finds the wrong projectile on the server and other clients, and throws | Rewrite calls to `AbyssalFire.VoidragonHoldout` to resolve the gun with `Projectile.GetByUUID`, and skip `PreDraw` while it can't be found | Not yet submitted |
 
 Every player and the host need the mod (`side = Both`): the loot fixes run on the server, and the spark packet needs every client.
 
@@ -35,10 +36,11 @@ For IDE or command-line builds, the `.csproj` references `ModSources/ModAssembli
 
 On a Host & Play world with this mod and Calamity enabled:
 
-- [ ] `server.log` shows five `Applied fix:` lines and no `Could not apply fix` lines.
+- [ ] `server.log` shows six `Applied fix:` lines and no `Could not apply fix` lines.
 - [ ] Killing a Burrower (including with electric debuffs) drops Mysterious Circuitry and Dubious Plating.
 - [ ] No `KeyNotFoundException` from `Burrower.HitEffect` or `BurrowerHitbox.AI` in `server.log`.
 - [ ] Activating a Wulfrum Lure spawns Wulfrum robots every 4 seconds that every player sees, with electric sparks where they appear, and they drop loot.
+- [ ] Firing the Voidragon's laser in multiplayer logs no `NullReferenceException` from `AbyssalFire` in `server.log`, and other players see the laser attached to the gun.
 - [ ] Singleplayer still works: Burrower gores show, lure waves and sparks show.
 
 ## Credits and license
