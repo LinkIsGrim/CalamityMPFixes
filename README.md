@@ -13,7 +13,7 @@ Not affiliated with the Calamity Mod team. The fixes have also been submitted up
 | Buzzkill saw gores throw on the server | Skip `BuzzkillSaw.OnKill` on the server | [#124](https://github.com/CalamityTeam/CalamityModPublic/pull/124) |
 | Wulfrum set end gores throw on the server | Skip `WulfrumArmorPlayer.SetBonusEndEffect` on the server | [#124](https://github.com/CalamityTeam/CalamityModPublic/pull/124) |
 | Wulfrum Lure waves spawn nothing on the server, and local-only robots on clients | Replace `WulfrumLureSignal.AI`, with a packet for the arrival sparks | [#125](https://github.com/CalamityTeam/CalamityModPublic/pull/125) |
-| Voidragon's laser (`AbyssalFire`) looks up its gun by the owner's local projectile index, finds the wrong projectile on the server and other clients, and throws | Rewrite calls to `AbyssalFire.VoidragonHoldout` to resolve the gun with `Projectile.GetByUUID`, and skip `PreDraw` while it can't be found | Not yet submitted |
+| Voidragon's laser (`AbyssalFire`) looks up its gun by the owner's local projectile index, finds the wrong projectile on the server and other clients, and throws | Rewrite calls to `AbyssalFire.VoidragonHoldout` to resolve the gun with `Projectile.GetByUUID`, and skip `PreDraw` while it can't be found | [#126](https://github.com/CalamityTeam/CalamityModPublic/pull/126) |
 
 Every player and the host need the mod (`side = Both`): the loot fixes run on the server, and the spark packet needs every client.
 

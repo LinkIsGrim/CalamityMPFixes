@@ -10,7 +10,7 @@ Fixes:
 
 Only applies to the Calamity versions it was tested against, so it switches itself off on newer Calamity versions. Each fix is applied separately, and any that no longer match Calamity's code are skipped and logged.
 
-These fixes have also been submitted to Calamity: https://github.com/CalamityTeam/CalamityModPublic/pull/123, https://github.com/CalamityTeam/CalamityModPublic/pull/124, https://github.com/CalamityTeam/CalamityModPublic/pull/125
+These fixes have also been submitted to Calamity: https://github.com/CalamityTeam/CalamityModPublic/pull/123, https://github.com/CalamityTeam/CalamityModPublic/pull/124, https://github.com/CalamityTeam/CalamityModPublic/pull/125, https://github.com/CalamityTeam/CalamityModPublic/pull/126
 
 Not affiliated with the Calamity Mod team. The Wulfrum Lure fix is based on code from the Calamity Mod, © Azafure, LLC: https://github.com/CalamityTeam/CalamityModPublic
 
