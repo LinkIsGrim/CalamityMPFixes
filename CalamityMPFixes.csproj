@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Import tModLoader mod properties. This project must live in tModLoader's ModSources folder (or be symlinked there) for this path to resolve. -->
+  <Import Project="..\tModLoader.targets" />
+
+  <PropertyGroup>
+    <AssemblyName>CalamityMPFixes</AssemblyName>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <!-- Building in-game from Mod Sources resolves CalamityMod from build.txt's modReferences. This reference is only for IDE and command-line builds; see README.md. -->
+  <ItemGroup Condition="Exists('..\ModAssemblies\CalamityMod.dll')">
+    <Reference Include="CalamityMod">
+      <HintPath>..\ModAssemblies\CalamityMod.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

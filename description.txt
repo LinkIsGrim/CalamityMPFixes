@@ -1,0 +1,16 @@
+Unofficial fixes for Calamity Mod bugs that only happen in multiplayer, including Host & Play. Use until an official Calamity update includes them, then unsubscribe.
+
+Every player and the host need this mod.
+
+Fixes:
+- Burrower drops no loot in multiplayer (no Mysterious Circuitry, Dubious Plating, ores, coins or Burrower Beacon).
+- Wulfrum Lure waves in multiplayer: robots spawned only in each player's own game, differed per player and dropped nothing (including Energy Cores). They now spawn on the server for everyone, arrival sparks included.
+- Server errors from Buzzkill saws, the Wulfrum armor set bonus ending, and Burrower segments.
+
+Only applies to the Calamity versions it was tested against, so it switches itself off on newer Calamity versions. Each fix is applied separately, and any that no longer match Calamity's code are skipped and logged.
+
+These fixes have also been submitted to Calamity: https://github.com/CalamityTeam/CalamityModPublic/pull/123, https://github.com/CalamityTeam/CalamityModPublic/pull/124, https://github.com/CalamityTeam/CalamityModPublic/pull/125
+
+Not affiliated with the Calamity Mod team. The Wulfrum Lure fix is based on code from the Calamity Mod, © Azafure, LLC: https://github.com/CalamityTeam/CalamityModPublic
+
+Source: https://github.com/LinkIsGrim/CalamityMPFixes

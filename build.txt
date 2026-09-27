@@ -1,0 +1,7 @@
+displayName = Calamity Multiplayer Fixes
+author = LinkIsGrim
+version = 0.1.0
+modReferences = CalamityMod
+side = Both
+homepage = https://github.com/LinkIsGrim/CalamityMPFixes
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, .git\*, .gitignore, README.md
