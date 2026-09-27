@@ -41,6 +41,8 @@ On a Host & Play world with this mod and Calamity enabled:
 - [ ] Activating a Wulfrum Lure spawns Wulfrum robots every 4 seconds that every player sees, with electric sparks where they appear, and they drop loot.
 - [ ] Singleplayer still works: Burrower gores show, lure waves and sparks show.
 
-## Credits
+## Credits and license
 
 The Wulfrum Lure fix (`Fixes/WulfrumLureFix.cs`) is based on `WulfrumLureSignal.AI` from the Calamity Mod, © Azafure, LLC: https://github.com/CalamityTeam/CalamityModPublic
+
+Everything else is under the MIT License. `Fixes/WulfrumLureFix.cs` is excluded from it and remains subject to the [Calamity Mod's license](https://github.com/CalamityTeam/CalamityModPublic/blob/1.4.4/LICENSE.md). See [LICENSE](LICENSE).
